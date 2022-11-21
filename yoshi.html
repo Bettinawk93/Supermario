@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div class="velge spiller"></div>
+    <img src="./yoshi.png"    class="yoshiImg">   
+    <img src="./bowser.png"    class="smallImg2">
+</head>
+<body>
+    <div class="flex">
+        <img src="bowser.png" class="img"/>
+        <div id="bowserHp">300 HP</div>
+        <button class="btn" id="bowser" onclick=attackOpponent(this)>Angrip</button>
+        <img src="bwsmush.png" class="img" onclick="regenBowser()"/>
+    </div>
+   
+        <div class="flex">
+            <img id="selectedChar" src="yoshi.png" class="img"/>
+            <div id="charHp">80 HP</div>
+            <button class="btn" id="char" onclick="attackOpponent(this)">Angrip Bowser!</button>
+            <img src="toad.png" class="img" onclick="regenLife()"/>
+    
+        </div>
+    
+
+<style>
+    .yoshiImg{
+        width:400px;
+        height:500px;
+        cursor:pointer;
+        margin-right:300px;
+        
+        
+    }
+    
+    .smallImg2{
+        width:400px;
+        height:500px;
+        cursor:pointer;
+        transform: scaleX(-1)
+        
+        
+    }
+
+</style>
+</body>
+</html>
